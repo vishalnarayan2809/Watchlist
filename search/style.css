@@ -214,6 +214,10 @@ gap: 18px;
     }
 }
 
+.add {
+    cursor: pointer;
+}
+
 /* Small screens (phones) */
 @media(max-width:470px){
     header {

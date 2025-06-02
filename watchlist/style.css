@@ -195,6 +195,9 @@ gap: 18px;
     padding-bottom: 25px;
 }
 
+.remove {
+    cursor: pointer;
+}
 /* Medium screens (tablets) */
 @media (max-width: 768px) {
     #search-bar {
