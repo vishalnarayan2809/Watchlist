@@ -9,7 +9,7 @@ async function getSavedMovies() {
 const savedMovies = 
     await Promise.all(
     savedMoviesTag.map( async(tag) => {
-        const res = await fetch(`http://www.omdbapi.com/?apikey=8b62d32c&i=${tag}&plot=short`)
+        const res = await fetch(`https://www.omdbapi.com/?apikey=8b62d32c&i=${tag}&plot=short`)
         const data = await res.json()
         return data
     })   

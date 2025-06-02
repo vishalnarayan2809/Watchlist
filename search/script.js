@@ -7,13 +7,13 @@ searchBtn.addEventListener('click',getData)
 
 let savedMovies = []
 async function getData() {
-    const response = await fetch(`http://www.omdbapi.com/?apikey=8b62d32c&s=${searchText.value}`)
+    const response = await fetch(`https://www.omdbapi.com/?apikey=8b62d32c&s=${searchText.value}`)
     const data = await response.json()
     if (data.Search) {
         // Fetch details for each movie
         const detailedMovies = await Promise.all(
             data.Search.map(async (movie) => {
-                const res = await fetch(`http://www.omdbapi.com/?apikey=8b62d32c&i=${movie.imdbID}&plot=short`)
+                const res = await fetch(`https://www.omdbapi.com/?apikey=8b62d32c&i=${movie.imdbID}&plot=short`)
                 return await res.json(); // Return the movie object directly
             })
         )
