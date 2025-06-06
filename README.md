@@ -2,7 +2,8 @@
 
 A responsive web application that allows users to search for movies and save them to a personal watchlist.
 
-![Movie Watchlist App Screenshot](/assets/app-screenshot.png)
+#Live link
+https://watchhhhlist.netlify.app/
 
 ## Features
 
